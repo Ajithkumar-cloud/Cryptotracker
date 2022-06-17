@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<title>crypto tracker</title>
+ 
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<center><h2>Crypto tracker</h2>
+    <h3> by Ajithkumar</h3>
+    <h4>coin type</h4>
+</center> 
+
+<center>
+ 
+  <div class="fanda" >
+  <form action="" id="searchForm">
+  
+    <select name="coinType">
+      <option value="bitcoin">Bitcoin</option>
+      <option value="dogecoin">Dogecoin</option>
+      <option value="ethereum">Ethereum</option>
+      <option value="polkadot">Polkadot</option>
+      <option value="tether">Tether</option>
+
+    </select>
+    
+    <br><br>
+
+      <button class="bt" type="submit">Get Price</button>
+    
+</form>
+</div>
+
+<br>
+</center>
+  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" ></script>
+
+<center>
+<table class="tbox"  border="3px" style="background-color:rgb(215, 250, 236)" >
+  <tr>
+    <th>Property</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td id="bs" ></td>
+    <td id="pr"></td><td id="tr"></td>
+  </tr>
+  <tr>
+    <td>Volume</td>
+    <td id="demo"></td>
+  </tr>
+  <tr>
+    <td>Change</td>
+    <td id="ch"></td>
+  </tr>
+
+
+
+</table>
+  
+
+
+</center>
+
+</body>
+
+
+</html>
