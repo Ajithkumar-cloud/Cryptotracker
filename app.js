@@ -1,5 +1,6 @@
 const form=document.querySelector('#searchForm');
-const t=document.querySelector('#tab');
+const res=document.querySelector('#restable');
+
 form.addEventListener('submit',(e)=>{
    e.preventDefault();
 
@@ -9,7 +10,6 @@ form.addEventListener('submit',(e)=>{
    
 });
 
-
 const fetchPrice= async(ctype) =>{
    const r= await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}?currency=USD`);
    const price =r.data.coin.price;
@@ -18,15 +18,26 @@ const fetchPrice= async(ctype) =>{
    const base =r.data.coin.name;
    const target='USD';
 
-   document.getElementById("bs").innerHTML=base;
-   document.getElementById("pr").innerHTML=price;
-   document.getElementById("tr").iinerHTML=target;
-    document.getElementById("demo").innerHTML=volume;
-    document.getElementById("ch").innerHTML=change;
+document.getElementById("restable").innerHTML=
+    `<tr><th>Property</th>
+    <th>Value</th></tr>
+    <tr><td>${base}</td>
+    <td>${price} ${target}</td>
+    </tr>
+    <tr><td>Volume (24hrs)</td>
+    <td>${volume}</td>
+    </tr>
+    <tr>
+    <td>Change (24hrs)</td>
+    <td>${change} ${target}</td>  
+    </tr>`;
+
+
+   };
     
 
 
 
-  };   
+   
 
     
