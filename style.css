@@ -1,40 +1,55 @@
 body{
 
-    background-image:url("https://images.unsplash.com/photo-1618262287816-333bc9a6db21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHxjcnlwdG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  /* background-image:url("https://images.unsplash.com/photo-1618262287816-333bc9a6db21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHxjcnlwdG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
     background-size: cover;
-  
+  */
+
+  background-color: #14213d;
 }
-h2{
-    color:red;
+h2,h3,h4{
+    color: white ; 
 
 }
 .bt{
    
-    background-color: darkblue;
+    background-color:rgb(5, 123, 190);
     color:white;
     width:75%;
     height: 30px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 19px;
+    border:none;
+    cursor: pointer;
   
-
 }
 .bt:hover{
-    background-color:black;
+    background-color:rgb(3, 110, 172);
     color: antiquewhite;
     opacity:20;
-    
 }
 select{
+    background-color: azure;
     width:75%;
-    padding: 4px;
+    padding: 5px;
     margin:10px;
     text-align: center;
-    font-size:15px;
-    
+    font-size:16px;
 }
 .fanda{
-    background-color: black;
+    background-color:#fca311;
     width:45%;
-    height: 113px;
+    height: 140px;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+.lb{
+    font-family:Arial, Helvetica, sans-serif;
+   margin-right: 63%
+
+}
+#restable{
+    background-color: white;
+    color:black;
+
 }
