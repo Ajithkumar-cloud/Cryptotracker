@@ -31,29 +31,3 @@ res.innerHTML=  `<tr><th>Property</th>
 <td>${change} ${target}</td>  
 </tr>`
 };
- 
-
-   /*
-document.getElementById("restable").innerHTML=
-    `<tr><th>Property</th>
-    <th>Value</th></tr>
-    <tr><td>${base}</td>
-    <td>${price} ${target}</td>
-    </tr>
-    <tr><td>Volume (24hrs)</td>
-    <td>${volume}</td>
-    </tr>
-    <tr>
-    <td>Change (24hrs)</td>
-    <td>${change} ${target}</td>  
-    </tr>`;
-
-*/
-  
-    
-
-
-
-   
-
-    
