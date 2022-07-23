@@ -18,6 +18,22 @@ const fetchPrice= async(ctype) =>{
    const base =r.data.coin.name;
    const target='USD';
 
+res.innerHTML=  `<tr><th>Property</th>
+<th>Value</th></tr>
+<tr><td>${base}</td>
+<td>${price} ${target}</td>
+</tr>
+<tr><td>Volume (24hrs)</td>
+<td>${volume}</td>
+</tr>
+<tr>
+<td>Change (24hrs)</td>
+<td>${change} ${target}</td>  
+</tr>`
+};
+ 
+
+   /*
 document.getElementById("restable").innerHTML=
     `<tr><th>Property</th>
     <th>Value</th></tr>
@@ -32,8 +48,8 @@ document.getElementById("restable").innerHTML=
     <td>${change} ${target}</td>  
     </tr>`;
 
-
-   };
+*/
+  
     
 
 
