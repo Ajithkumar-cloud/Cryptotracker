@@ -101,10 +101,7 @@ select{
     color: white;
 }
 @media screen and (max-width:1160px) {
-    
-    h2,h3{
-        font-size: 20px;
-    }
+ 
     .bt{
         width: 75%;
         height: 33px;
@@ -140,12 +137,7 @@ select{
 }
 @media screen and (max-width: 560px) {
     
-    h2,h3{
-        font-size: 18px;
-    }
     .fanda{
-         
-       
         position:relative;
         width: 290px;
         height: 160px;
@@ -169,8 +161,6 @@ select{
         height: 35px;
         font-size: 15px;
         padding: 6px;
-     
-    
     }
     #restable{
         font-size: 14px;
